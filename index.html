@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="background-clip">
+      <video autoplay loop muted class="background-clip" src="853828-hd_1920_1080_25fps.mp4"></video>
+        <h1>DrinkForMe</h1>
+        <h2>#BeerLover</h2>
+        <h3>Artisan</h3>
+    <div class="banner">
+        <div class="product">
+            <div class="soda">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+<style>
+    .banner .product{
+        /* background-color: red; */
+        /* display: flex;
+        justify-items: center;
+        align-content: center; */
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        bottom: 170px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        transition: 0.7s;
+        --left: 0px;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* .background-img{
+    background-image:url(4765779-hd_1920_1080_25fps.mp4);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    height: 100vh; */
+
+/* } */
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+@media(min-aspect-ratio:16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+
+}
+@media(max-aspect-ratio:16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.banner .product .soda{
+    
+    background:
+    url(8039413.jpg) var(--left) 0,
+    url(freepik-export-202408071635581PS0.png);
+    background-size: auto 100%;
+    width: 280px;
+    /* height: 500px; */
+background-repeat: no-repeat;
+aspect-ratio: 2/4;
+background-blend-mode: multiply;
+mask-image: url(freepik-export-202408071635581PS0.png);
+mask-size: auto 100%;
+transition: 0.7s;
+
+
+}
+.banner .product:hover{
+    --left:-280px;
+    transform: translateX(-50%)translateY(-50px);
+    transform: translateX(50%);
+    
+
+}
+h1{
+    padding: 20px;
+    font-size: 100px;
+    color: rgba(235, 239, 13, 0.447);
+    font-family: fantasy;
+}
+h2{ 
+    padding: 10px;
+    font-size: 150px;
+    color: rgba(127, 255, 155, 0.479);
+    font-family: cursive;
+}
+h3{
+    padding: 10px;
+    font-size: 200px;
+    color: rgba(255, 235, 205, 0.431);
+    font-family: fantasy;
+}
+
+</style>
+
+</html>
